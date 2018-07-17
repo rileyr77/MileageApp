@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Mileage" max_length="40" name="x_242507_mileage_mileage" sizeclass="424" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="Silver Malibu" label="Car" mandatory="true" max_length="40" name="u_car" type="string">
+            <choice>
+                <element label="Grey Malibu" sequence="0" value="Grey Malibu"/>
+                <element label="Silver Malibu" sequence="0" value="Silver Malibu"/>
+            </choice>
+        </element>
+        <element label="DIC mileage" max_length="40" name="u_dic_mileage" type="float"/>
+        <element label="DIC miles" max_length="40" name="u_dic_miles" type="float"/>
+        <element label="Gallons" mandatory="true" max_length="40" name="u_gallons" type="float"/>
+        <element label="Miles" max_length="40" name="u_miles" read_only="true" type="integer"/>
+        <element label="Miles per gallon" max_length="40" name="u_miles_per_gallon" read_only="true" type="float"/>
+        <element label="Odometer" mandatory="true" max_length="40" name="u_odometer" type="integer"/>
+        <element label="Price per gallon" mandatory="true" max_length="40" name="u_price_per_gallon" type="float"/>
+        <element label="Purchase Date" mandatory="true" max_length="40" name="u_purchase_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Station where purchased" mandatory="true" max_length="40" name="u_station" type="string"/>
+        <element attributes="omit_sys_original=true" label="Total price" max_length="20" name="u_total_price" read_only="true" type="currency"/>
+    </element>
+</database>

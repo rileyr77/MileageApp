@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_dic_miles" label="DIC miles" language="en" table="x_242507_mileage_mileage">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_dic_miles</element>
+            <help/>
+            <hint/>
+            <label>DIC miles</label>
+            <language>en</language>
+            <name>x_242507_mileage_mileage</name>
+            <plural>DIC miles</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-14 20:45:28</sys_created_on>
+            <sys_id>56baab65dbd757008e65146139961906</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>DIC miles</sys_name>
+            <sys_package display_value="Mileage" source="x_242507_mileage">3420afaddb9757008e651461399619ea</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Mileage">3420afaddb9757008e651461399619ea</sys_scope>
+            <sys_update_name>sys_documentation_x_242507_mileage_mileage_u_dic_miles_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-14 20:45:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

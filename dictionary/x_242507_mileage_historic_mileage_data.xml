@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Historic Mileage Data" max_length="40" name="x_242507_mileage_historic_mileage_data" type="collection">
+        <element attributes="import_attribute_name=Car,edge_encryption_enabled=true" label="Car" max_length="40" name="u_car" type="string"/>
+        <element attributes="import_attribute_name=DIC Mileage,edge_encryption_enabled=true" label="DIC Mileage" max_length="40" name="u_dic_mileage" type="string"/>
+        <element attributes="import_attribute_name=DIC Miles,edge_encryption_enabled=true" label="DIC Miles" max_length="40" name="u_dic_miles" type="string"/>
+        <element attributes="import_attribute_name=Gallons,edge_encryption_enabled=true" label="Gallons" max_length="40" name="u_gallons" type="string"/>
+        <element attributes="import_attribute_name=Mileage,edge_encryption_enabled=true" label="Mileage" max_length="40" name="u_mileage" type="string"/>
+        <element attributes="import_attribute_name=Miles,edge_encryption_enabled=true" label="Miles" max_length="40" name="u_miles" type="string"/>
+        <element attributes="import_attribute_name=Odometer,edge_encryption_enabled=true" label="Odometer" max_length="40" name="u_odometer" type="string"/>
+        <element attributes="import_attribute_name=Price Per Gallon,edge_encryption_enabled=true" label="Price Per Gallon" max_length="40" name="u_price_per_gallon" type="string"/>
+        <element attributes="import_attribute_name=Purchase Date,edge_encryption_enabled=true" label="Purchase Date" max_length="40" name="u_purchase_date" type="string"/>
+        <element attributes="import_attribute_name=Total,edge_encryption_enabled=true" label="Total" max_length="40" name="u_total" type="string"/>
+    </element>
+</database>

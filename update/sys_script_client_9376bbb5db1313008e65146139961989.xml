@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Calculate Total Price when Gallons changes</description>
+        <field>u_gallons</field>
+        <global>true</global>
+        <messages/>
+        <name>Calculate Total Price onChange Gallons</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+
+	var gallons = parseFloat(newValue);
+	var pricePerGallon = parseFloat(g_form.getValue('u_price_per_gallon'));
+	if (pricePerGallon) {
+		var totalPrice = gallons.toFixed(2) * pricePerGallon.toFixed(2);
+		totalPrice = totalPrice.toFixed(2);
+
+		g_form.setValue('u_total_price', totalPrice);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-15 16:23:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9376bbb5db1313008e65146139961989</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Calculate Total Price onChange Gallons</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mileage" source="x_242507_mileage">3420afaddb9757008e651461399619ea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mileage">3420afaddb9757008e651461399619ea</sys_scope>
+        <sys_update_name>sys_script_client_9376bbb5db1313008e65146139961989</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-16 16:28:21</sys_updated_on>
+        <table>x_242507_mileage_mileage</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Calculate Total Price when Price per gallon chnages</description>
+        <field>u_price_per_gallon</field>
+        <global>true</global>
+        <messages/>
+        <name>Calculate Total Price onChange Price per</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+	if (isLoading || newValue === '') {
+		return;
+	}
+
+	var pricePerGallon = parseFloat(newValue);
+	var gallons = parseFloat(g_form.getValue('u_gallons'));
+	if (gallons) {
+		var totalPrice = gallons.toFixed(2) * pricePerGallon.toFixed(2);
+		totalPrice = totalPrice.toFixed(2);
+
+		g_form.setValue('u_total_price', totalPrice);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-15 18:50:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70a9d48adb5313008e651461399619e1</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Calculate Total Price onChange Price per</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mileage" source="x_242507_mileage">3420afaddb9757008e651461399619ea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mileage">3420afaddb9757008e651461399619ea</sys_scope>
+        <sys_update_name>sys_script_client_70a9d48adb5313008e651461399619e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-16 16:26:19</sys_updated_on>
+        <table>x_242507_mileage_mileage</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
