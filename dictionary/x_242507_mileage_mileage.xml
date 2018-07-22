@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
     <element audit="true" extends="task" label="Mileage" max_length="40" name="x_242507_mileage_mileage" sizeclass="424" type="collection">
-        <element attributes="edge_encryption_enabled=true" choice="3" default="Silver Malibu" label="Car" mandatory="true" max_length="40" name="u_car" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="2011" label="Car" mandatory="true" max_length="40" name="u_car" type="string">
             <choice>
-                <element label="Grey Malibu" sequence="0" value="Grey Malibu"/>
-                <element label="Silver Malibu" sequence="0" value="Silver Malibu"/>
+                <element label="2007 Malibu" sequence="0" value="2007"/>
+                <element label="2011 Malibu" sequence="1" value="2011"/>
             </choice>
         </element>
         <element label="DIC mileage" max_length="40" name="u_dic_mileage" type="float"/>

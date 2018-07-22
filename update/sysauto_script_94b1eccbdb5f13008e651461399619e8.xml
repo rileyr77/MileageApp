@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Change Car Field Value</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-07-18 21:58:02</run_start>
+        <run_time>1970-01-01 05:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[var gr = new GlideRecord('x_242507_mileage_mileage');
+gr.addQuery('u_car','Grey Malibu');
+gr.query();
+while(gr.next()) {
+	gs.addInfoMessage(gr.number + ": " + gr.u_car);
+	gr.setValue('u_car',"2007 Malibu");
+	gr.update();
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-18 22:02:18</sys_created_on>
+        <sys_id>94b1eccbdb5f13008e651461399619e8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Change Car Field Value</sys_name>
+        <sys_package display_value="Mileage" source="x_242507_mileage">3420afaddb9757008e651461399619ea</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mileage">3420afaddb9757008e651461399619ea</sys_scope>
+        <sys_update_name>sysauto_script_94b1eccbdb5f13008e651461399619e8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-18 22:07:17</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

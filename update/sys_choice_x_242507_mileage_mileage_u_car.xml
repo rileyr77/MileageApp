@@ -6,38 +6,38 @@
             <element>u_car</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Grey Malibu</label>
+            <label>2007 Malibu</label>
             <language>en</language>
             <name>x_242507_mileage_mileage</name>
             <sequence>0</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-17 18:25:21</sys_created_on>
+            <sys_created_on>2018-07-18 22:12:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>d367aeaedb5313008e65146139961922</sys_id>
+            <sys_id>95f4acc7db9f13008e6514613996197f</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-17 18:25:21</sys_updated_on>
-            <value>Grey Malibu</value>
+            <sys_updated_on>2018-07-18 22:12:18</sys_updated_on>
+            <value>2007</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>u_car</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Silver Malibu</label>
+            <label>2011 Malibu</label>
             <language>en</language>
             <name>x_242507_mileage_mileage</name>
-            <sequence>0</sequence>
+            <sequence>1</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2018-07-17 18:25:28</sys_created_on>
+            <sys_created_on>2018-07-18 22:12:18</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>f07762eedb5313008e6514613996197d</sys_id>
+            <sys_id>d9f4acc7db9f13008e651461399619e4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2018-07-17 18:25:28</sys_updated_on>
-            <value>Silver Malibu</value>
+            <sys_updated_on>2018-07-18 22:12:18</sys_updated_on>
+            <value>2011</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>u_car</element>
